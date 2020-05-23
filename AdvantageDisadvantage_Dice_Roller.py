@@ -1,5 +1,10 @@
 import random as r
-def main():
+#import argparse # this is a useful package! You could put it in main if you wanted.
+
+def roll_dice():
+    """
+    Hi James! This is where one could write a description of your python method if you wanted to! 
+    """
     print("Hello welcome to Adv/DAdv Dice Roller.\nAre you rolling with (A)dvantage or (D)isadvantage?")
     inplay = True;
     while(inplay):
@@ -55,6 +60,10 @@ def main():
                 print("Total is a 1! (The subzero number is: " +  str(fDice+modNum) + ")");
             else:
                 print("Total is a " + str(fDice+modNum) + "!");
+
+def main():
+    roll_dice()
+
 if(__name__ == "__main__"):
     main()
 
